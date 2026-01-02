@@ -1,0 +1,46 @@
+/* Custom overrides and micro styles for portfolio */
+:root{--neon:#7cf6ff}
+html,body{scroll-behavior:smooth}
+#cursor-follower{position:fixed;left:0;top:0;width:18px;height:18px;border-radius:999px;background:linear-gradient(135deg,var(--neon),#66d9ff);mix-blend-mode:screen;pointer-events:none;transform:translate(-50%,-50%) scale(.6);box-shadow:0 6px 22px rgba(124,246,255,0.12);z-index:9999;transition:width .18s ease,height .18s ease,transform .18s ease}
+.mindmap-node{position:absolute;display:flex;align-items:center;justify-content:center;flex-direction:column;width:110px;height:110px;border-radius:999px;background:rgba(10,12,16,0.65);border:1px solid rgba(255,255,255,0.05);backdrop-filter:blur(6px);transition:transform .28s cubic-bezier(.2,.9,.2,1),box-shadow .2s;cursor:pointer}
+.mindmap-node .label{color:rgba(188,225,240,0.92);font-weight:600;font-size:14px}
+.mindmap-node:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 10px 30px rgba(124,246,255,0.06)}
+.subpanel{position:absolute;min-width:220px;background:rgba(3,6,12,0.75);border:1px solid rgba(124,246,255,0.06);padding:10px;border-radius:10px;color:#d7f8ff;font-size:13px;backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.title-reveal{opacity:0;transform:translateY(12px)}
+.title-reveal.show{opacity:1;transform:none;transition:all .9s cubic-bezier(.2,.9,.2,1)}
+.project-card{border:1px solid rgba(255,255,255,0.04)}
+@media (max-width:640px){.mindmap-node{width:88px;height:88px}}
+
+/* Section defaults to be visible and stack vertically */
+section{position:relative;z-index:1;min-height:28vh;padding:2.25rem 0;color:#e6eef6}
+main{background-color:transparent}
+
+/* Ensure header sits above content */
+header{z-index:50}
+
+/* Ensure section internal content stacks above decorative backgrounds */
+section > *{position:relative;z-index:2}
+
+/* Mindmap / svg stacking — keep lines behind nodes and panels */
+.relative > svg.absolute.inset-0{z-index:1}
+.mindmap-node{z-index:2}
+.subpanel{z-index:3}
+#mindmap-root{z-index:2}
+
+/* Accessibility: ensure readable text */
+h1,h2,h3,h4{color:#ecf8ff}
+p,li,div{color:#d7eaf0}
+
+/* JS-enabled reveal: keep content visible if JS is disabled */
+.title-reveal{opacity:1;transform:none;transition:all .75s cubic-bezier(.2,.9,.2,1)}
+.title-reveal.js-hidden{opacity:0;transform:translateY(12px)}
+.title-reveal.js-hidden.show{opacity:1;transform:none}
+
+/* Ensure no full-screen overlays hide content */
+* { -webkit-font-smoothing:antialiased }
+
+/* small utility for resume download button */
+.btn-download{background:linear-gradient(90deg,var(--neon),#5fe1ff);color:#000;padding:.5rem .9rem;border-radius:.6rem;font-weight:600}
+
+/* Fallback for no-js: ensure all sections visible */
+noscript section{opacity:1 !important;transform:none !important}

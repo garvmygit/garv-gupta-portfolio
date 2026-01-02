@@ -1,0 +1,9 @@
+{
+  "name": "garv-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes http-server ./ -p 8080 --silent",
+    "start": "npx --yes http-server ./ -p 8080 --silent"
+  }
+}

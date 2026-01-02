@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Garv Gupta — Frontend Developer. Building modern, scalable, interactive web experiences with HTML5, CSS3, JavaScript, Tailwind CSS." />
+  <meta name="keywords" content="Garv Gupta, Frontend Developer, Web Developer, Java, Blockchain, IoT, HTML5, CSS3, JavaScript, React, Tailwind CSS" />
+  <meta name="author" content="Garv Gupta" />
+  <title>Garv Gupta — Portfolio</title>
+  <meta property="og:title" content="Garv Gupta — Frontend Developer" />
+  <meta property="og:description" content="Building modern, scalable, interactive web experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <script>
+    // Tailwind config must be defined before the CDN script
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { 'bg-deep': '#05060a', 'neon': '#7cf6ff' },
+          boxShadow: { 'neon-sm': '0 4px 18px rgba(124,246,255,0.06)' }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-bg-deep text-slate-200 font-sans antialiased">
+  <div id="cursor-follower" aria-hidden="true"></div>
+
+  <header class="max-w-6xl mx-auto p-4 sm:p-6 flex items-center justify-between">
+    <a href="#" class="text-white text-lg font-medium">Garv Gupta</a>
+    <nav class="space-x-4 text-slate-300 text-sm hidden sm:flex">
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#mindmap" class="hover:text-white">Mindmap</a>
+      <a href="#skills" class="hover:text-white">Skills</a>
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <!-- HERO -->
+    <section id="hero" class="min-h-[64vh] flex flex-col justify-center items-start gap-6 pb-12">
+      <div class="backdrop-blur-md bg-glass rounded-2xl p-6 sm:p-10 w-full sm:w-3/4 shadow-neon-sm border border-white/5">
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-2">
+          <span class="block">Hi, I'm <span class="text-neon">Garv Gupta</span></span>
+        </h1>
+        <div class="flex items-center gap-3">
+          <div class="text-xl sm:text-2xl opacity-80">I'm a</div>
+          <div id="title-rotator" class="text-2xl sm:text-3xl font-semibold text-neon h-8 overflow-hidden"></div>
+        </div>
+
+        <p class="mt-4 text-slate-300 max-w-2xl">Building modern, scalable, and interactive web experiences.</p>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-lg bg-neon text-black font-medium hover:brightness-95 transition">View Projects</a>
+          <a href="#contact" class="px-4 py-2 rounded-lg border border-white/10 text-slate-200 hover:bg-white/3 transition">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="pt-8 pb-12">
+      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="sm:col-span-2 backdrop-blur-md bg-glass rounded-xl p-6">
+          <p class="mb-3">I am a 6th Semester BE Computer Science & Engineering student at Chitkara University, Punjab (Batch: 2023–2027). I have a strong interest in Web Development, Full Stack, Java, and Blockchain. I build performant, accessible, and scalable web apps with modern tooling.</p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4 text-sm text-slate-300">
+            <li><strong>University:</strong> Chitkara University</li>
+            <li><strong>Degree:</strong> BE CSE (Class of 2027)</li>
+            <li><strong>Interests:</strong> Web Development, Java, Blockchain, IoT</li>
+            <li><strong>Focus:</strong> UI, Performance, Scalable Architecture</li>
+          </ul>
+        </div>
+        <div class="backdrop-blur-md bg-glass rounded-xl p-6 flex flex-col gap-3">
+          <h3 class="text-lg font-medium">Quick Facts</h3>
+          <div class="text-sm text-slate-300">Fresher · Hands-on projects · Workshops & contests</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINDMAP -->
+    <section id="mindmap" class="pt-4 pb-12">
+      <h2 class="text-2xl font-semibold mb-4">Garv Gupta — Skill Mindmap</h2>
+      <div class="relative w-full h-[420px] sm:h-[520px] rounded-xl bg-gradient-to-b from-transparent via-white/1 to-transparent border border-white/5 backdrop-blur-md overflow-hidden">
+        <div id="mindmap-root" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-44 flex items-center justify-center flex-col rounded-full bg-glass border border-white/7 shadow-neon-sm">
+          <div class="text-sm text-slate-300">Garv Gupta</div>
+          <div class="text-xs text-neon font-semibold">Skill Mindmap</div>
+        </div>
+
+        <!-- Nodes will be injected by JS -->
+      </div>
+      <p class="text-sm text-slate-400 mt-3">Tap / Click a node to expand sub-skills. Hover to glow.</p>
+    </section>
+
+    <!-- SKILLS (ATS-Optimized) -->
+    <section id="skills" class="pt-4 pb-12">
+      <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="backdrop-blur-md bg-glass rounded-xl p-6">
+          <h3 class="font-semibold mb-2">Frontend</h3>
+          <ul class="text-sm text-slate-300 list-disc list-inside">
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>Responsive Design, Cross-browser compatibility</li>
+            <li>DOM Manipulation</li>
+            <li>Tailwind CSS / Bootstrap</li>
+            <li>React.js (Basics), UI/UX Principles</li>
+            <li>Accessibility (ARIA)</li>
+          </ul>
+        </div>
+
+        <div class="backdrop-blur-md bg-glass rounded-xl p-6">
+          <h3 class="font-semibold mb-2">Backend & Programming</h3>
+          <ul class="text-sm text-slate-300 list-disc list-inside">
+            <li>Java, Object-Oriented Programming (OOP)</li>
+            <li>Data Structures & Algorithms</li>
+            <li>File Handling</li>
+            <li>Basic Node.js & Express.js, REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="backdrop-blur-md bg-glass rounded-xl p-6">
+          <h3 class="font-semibold mb-2">Tools, Cloud & Emerging Tech</h3>
+          <ul class="text-sm text-slate-300 list-disc list-inside">
+            <li>Git & GitHub, VS Code, npm, Linux Commands</li>
+            <li>SQL (Basics), File-based storage</li>
+            <li>Cloud computing fundamentals (Render / Vercel)</li>
+            <li>Blockchain Fundamentals, Web3, IoT (ESP8266)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="pt-8 pb-12">
+      <div class="backdrop-blur-md bg-glass rounded-xl p-6">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-semibold">Resume</h2>
+            <p class="text-sm text-slate-300 mt-2">Garv Gupta — Computer Science Undergraduate</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="assets/resume/Garv-Gupta-Resume.txt" download="Garv-Gupta-Resume.txt" class="btn-download">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
+          <div class="sm:col-span-2">
+            <h3 class="font-semibold">Professional Summary</h3>
+            <p class="text-sm text-slate-300 mt-2">Computer Science undergraduate with hands-on experience in frontend, backend, and system design. Skilled in Java, Spring Boot, Node.js, React, and WebRTC. Strong foundation in DSA, OOP, REST APIs, Docker, CI/CD, JWT authentication, and performance optimization.</p>
+
+            <h3 class="font-semibold mt-4">Key Projects</h3>
+            <ul class="list-disc list-inside text-sm mt-2 text-slate-300">
+              <li>ScreenX — Real-time Video Conferencing (WebRTC, Node.js, Socket.IO)</li>
+              <li>TokenizeHub — IoT + Blockchain (ESP8266, JWT, Web3)</li>
+              <li>Computer Vision Safety Platform — YOLO-based detection</li>
+              <li>Java Smart Library System — DSA & OOP</li>
+              <li>Hotel Management Web App — Full-stack</li>
+            </ul>
+          </div>
+
+          <aside class="backdrop-blur-sm bg-glass p-4 rounded-lg">
+            <h4 class="font-semibold">Contact</h4>
+            <div class="text-sm text-slate-300 mt-2">Email: <a href="mailto:garvgupta307@gmail.com" class="text-neon">garvgupta307@gmail.com</a></div>
+            <div class="text-sm text-slate-300 mt-1">GitHub: <a href="https://github.com/garvmygit" class="text-neon">github.com/garvmygit</a></div>
+            <div class="text-sm text-slate-300 mt-1">LinkedIn: <a href="https://www.linkedin.com/in/garv-gupta-405b95303/" class="text-neon">linkedin.com/in/garv-gupta</a></div>
+
+            <h4 class="font-semibold mt-4">Education</h4>
+            <div class="text-sm text-slate-300 mt-2">B.E. Computer Science & Engineering<br/>Chitkara University, Punjab (2023–2027)</div>
+          </aside>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
+          <div>
+            <h4 class="font-semibold">Technical Skills</h4>
+            <ul class="text-sm text-slate-300 list-disc list-inside mt-2">
+              <li><strong>Languages:</strong> Java, Python, JavaScript, C++, SQL</li>
+              <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Tailwind, Bootstrap, React</li>
+              <li><strong>Backend:</strong> Spring Boot, Node.js, Express</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold">Tools & Cloud</h4>
+            <ul class="text-sm text-slate-300 list-disc list-inside mt-2">
+              <li>MySQL, PostgreSQL, MongoDB</li>
+              <li>Docker, CI/CD, Git, GitHub</li>
+              <li>AWS / GCP (basics)</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold">Security & Concepts</h4>
+            <ul class="text-sm text-slate-300 list-disc list-inside mt-2">
+              <li>JWT, OAuth2</li>
+              <li>REST APIs, Microservices, Caching, Performance Optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 class="font-semibold mt-6">Achievements</h4>
+        <ul class="text-sm text-slate-300 list-disc list-inside mt-2">
+          <li>Improved end-to-end video latency by 28% in ScreenX through optimized WebRTC signaling and packet prioritization.</li>
+          <li>Reduced server response time by 40% for TokenizeHub microservices by introducing caching and async processing.</li>
+          <li>Achieved 92% detection accuracy in Computer Vision Safety Platform using YOLO optimizations and dataset augmentation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="pt-4 pb-12">
+      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Project Card Template -->
+        <article class="project-card backdrop-blur-md bg-glass rounded-xl p-6 transition hover:scale-[1.01]">
+          <h3 class="font-semibold text-lg">TokenizeHub</h3>
+          <p class="text-sm text-slate-300 mt-2">IoT + Blockchain integration for device identity and secure telemetry.</p>
+          <p class="mt-3 text-xs text-slate-400"><strong>Tech:</strong> ESP8266, Solidity, Web3, Node.js</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm px-3 py-1 rounded bg-neon text-black">GitHub</a>
+            <a href="#" class="text-sm px-3 py-1 rounded border border-white/10">Live</a>
+          </div>
+        </article>
+
+        <article class="project-card backdrop-blur-md bg-glass rounded-xl p-6 transition hover:scale-[1.01]">
+          <h3 class="font-semibold text-lg">ScreenX</h3>
+          <p class="text-sm text-slate-300 mt-2">Real-time Screen sharing using WebRTC + Socket.IO.</p>
+          <p class="mt-3 text-xs text-slate-400"><strong>Tech:</strong> WebRTC, Socket.IO, Node.js</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm px-3 py-1 rounded bg-neon text-black">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card backdrop-blur-md bg-glass rounded-xl p-6 transition hover:scale-[1.01]">
+          <h3 class="font-semibold text-lg">React Clock</h3>
+          <p class="text-sm text-slate-300 mt-2">A lightweight, accessible clock built in React.</p>
+          <p class="mt-3 text-xs text-slate-400"><strong>Tech:</strong> React.js, CSS Animations</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm px-3 py-1 rounded bg-neon text-black">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card backdrop-blur-md bg-glass rounded-xl p-6 transition hover:scale-[1.01]">
+          <h3 class="font-semibold text-lg">Smart Library System</h3>
+          <p class="text-sm text-slate-300 mt-2">Academic Java project focusing on DSA and OOP.</p>
+          <p class="mt-3 text-xs text-slate-400"><strong>Tech:</strong> Java, JDBC, Data Structures</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm px-3 py-1 rounded bg-neon text-black">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card backdrop-blur-md bg-glass rounded-xl p-6 transition hover:scale-[1.01]">
+          <h3 class="font-semibold text-lg">Hotel Management Website</h3>
+          <p class="text-sm text-slate-300 mt-2">Responsive web app for hotel booking and management.</p>
+          <p class="mt-3 text-xs text-slate-400"><strong>Tech:</strong> HTML, CSS, JavaScript, Node.js</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm px-3 py-1 rounded bg-neon text-black">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / LEARNING -->
+    <section id="experience" class="pt-4 pb-12">
+      <h2 class="text-2xl font-semibold mb-4">Experience & Learning</h2>
+      <div class="backdrop-blur-md bg-glass rounded-xl p-6">
+        <ul class="list-disc list-inside text-slate-300">
+          <li>Technical workshops: GeeksforGeeks — Generative AI & ChatGPT</li>
+          <li>Coding contests & certifications</li>
+          <li>Academic projects with focus on DSA & clean architecture</li>
+          <li>Continuous self-learning (Web3, IoT, modern frontend)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="pt-4 pb-12">
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="backdrop-blur-md bg-glass rounded-xl p-6">
+          <h3 class="font-semibold">Get in touch</h3>
+          <p class="text-sm text-slate-300 mt-2">Email: <a href="mailto:garvgupta307@gmail.com" class="text-neon">garvgupta307@gmail.com</a></p>
+          <p class="text-sm text-slate-300 mt-1">GitHub: <a href="https://github.com/garvmygit" class="text-neon" target="_blank" rel="noopener">github.com/garvmygit</a></p>
+          <p class="text-sm text-slate-300 mt-1">LinkedIn: <a href="https://www.linkedin.com/in/garv-gupta-405b95303/" class="text-neon" target="_blank" rel="noopener">linkedin.com/in/garv-gupta</a></p>
+        </div>
+
+        <form id="contact-form" class="backdrop-blur-md bg-glass rounded-xl p-6 flex flex-col gap-3" aria-label="Contact form">
+          <label class="text-xs text-slate-300">Name
+            <input name="name" required class="mt-1 w-full rounded-md bg-transparent border border-white/6 p-2 text-slate-200" />
+          </label>
+          <label class="text-xs text-slate-300">Email
+            <input name="email" type="email" required class="mt-1 w-full rounded-md bg-transparent border border-white/6 p-2 text-slate-200" />
+          </label>
+          <label class="text-xs text-slate-300">Message
+            <textarea name="message" rows="4" required class="mt-1 w-full rounded-md bg-transparent border border-white/6 p-2 text-slate-200"></textarea>
+          </label>
+          <div class="flex gap-3">
+            <button type="submit" class="px-4 py-2 rounded bg-neon text-black">Send</button>
+            <button type="reset" class="px-4 py-2 rounded border border-white/6">Reset</button>
+          </div>
+          <div id="contact-notice" class="text-sm text-slate-400 mt-2"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="max-w-6xl mx-auto p-6 text-center text-sm text-slate-400">
+    Designed & Built by Garv Gupta — © <span id="year"></span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

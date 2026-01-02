@@ -1,0 +1,36 @@
+Garv Gupta - Resume
+
+Email: garvgupta307@gmail.com
+GitHub: https://github.com/garvmygit
+LinkedIn: https://www.linkedin.com/in/garv-gupta-405b95303/
+
+Education:
+B.E. Computer Science & Engineering
+Chitkara University, Punjab (2023–2027)
+
+Professional Summary:
+Computer Science undergraduate with hands-on experience in frontend, backend, and system design.
+Skilled in Java, Spring Boot, Node.js, React, and WebRTC. Strong foundation in DSA, OOP, REST APIs,
+Docker, CI/CD, JWT authentication, and performance optimization.
+
+Technical Skills:
+Languages: Java, Python, JavaScript, C++, SQL
+Frontend: HTML, CSS, JavaScript, Tailwind, Bootstrap, React
+Backend: Spring Boot, Node.js, Express
+Databases: MySQL, PostgreSQL, MongoDB
+DevOps: Docker, CI/CD, Git, GitHub
+Cloud: AWS, GCP (basics)
+Security: JWT, OAuth2
+Concepts: REST APIs, Microservices, Caching, Performance Optimization
+
+Key Projects:
+- ScreenX — Real-time Video Conferencing (WebRTC, Node.js, Socket.IO)
+- TokenizeHub — IoT + Blockchain (ESP8266, JWT, Web3)
+- Computer Vision Safety Platform — YOLO-based detection
+- Java Smart Library System — DSA & OOP
+- Hotel Management Web App — Full-stack
+
+Achievements:
+- Improved end-to-end video latency by 28% in ScreenX through optimized WebRTC signaling and packet prioritization.
+- Reduced server response time by 40% for TokenizeHub microservices by introducing caching and async processing.
+- Achieved 92% detection accuracy in Computer Vision Safety Platform using YOLO optimizations and dataset augmentation.
